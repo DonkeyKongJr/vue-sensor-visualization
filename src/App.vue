@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SensorData msg="Welcome to Vue Sensor Visualization."/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SensorData from './components/SensorData.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    SensorData
   }
 }
 </script>
