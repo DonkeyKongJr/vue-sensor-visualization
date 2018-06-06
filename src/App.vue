@@ -1,15 +1,15 @@
 <template>
-  <div id="app">
+<div id="app">   
     <img src="./assets/logo.png">
-    <SensorData msg="Welcome to Vue Sensor Visualization."/>
-  </div>
+    <SensorData msg="Welcome to Vue Sensor Visualization."/>   
+</div>
 </template>
 
 <script>
 import SensorData from './components/SensorData.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     SensorData
   }
