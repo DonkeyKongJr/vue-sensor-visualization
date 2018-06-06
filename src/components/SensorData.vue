@@ -1,9 +1,11 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-     <button v-on:click="reverseMessage">Reverse Message</button>
-     click count: {{clickCount}}
-  </div>
+  <v-app>
+    <div class="hello">
+      <h1>{{ msg }}</h1>
+      <v-btn raised color="primary" v-on:click="clickHandler">Click here</v-btn>
+      click count: {{clickCount}}
+    </div>
+  </v-app>
 </template>
 
 <script>
@@ -18,7 +20,7 @@ export default {
     msg: String,
   },
    methods: {
-    reverseMessage: function () {
+    clickHandler: function () {
       this.clickCount += 1;
       console.log('Logging... ' + this.clickCount.toString())
     }
